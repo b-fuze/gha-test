@@ -3,12 +3,15 @@ name: anime
 on: push
 
 defaults:
-  runs-on: ubuntu-latest
   run:
     shell: bash
 
 jobs:
   serious-work:
+    # This belongs here
+    runs-on: ubuntu-latest
+
+    # And these are steps
     steps:
       - name: Is this thing working
         run: |
