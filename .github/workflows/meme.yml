@@ -1,0 +1,16 @@
+name: anime
+
+on: push
+
+defaults:
+  runs-on: ubuntu-latest
+  run:
+    shell: bash
+
+jobs:
+  serious-work:
+    steps:
+      - name: Is this thing working
+        run: |
+          echo "GITHUB_SHA: $GITHUB_SHA"
+
